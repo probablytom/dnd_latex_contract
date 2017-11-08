@@ -1,0 +1,33 @@
+\documentclass{contract}
+\usepackage{blindtext}
+
+% You'll want to put in a title, and supress a date by providinng a blank one.
+\title{Very good contract\vspace{-1cm}}
+\date{}
+
+\begin{document}
+
+\maketitle
+  %% TODO: reduce title margin in the contract class so this
+                %% doesn't have to be included every time.
+
+
+\begin{flavourtext}
+  This is some flavour text!\par
+
+  You could write all sorts of things here.
+
+  \begin{itemize}[noitemsep]
+    \item Even make lists!
+    \item It'll just accept \LaTeX.
+  \end{itemize}
+\end{flavourtext}
+
+\begin{tasks}
+  \item This thing hasn't been looked at yet
+  \item[\completed] We finished it!
+  \item[\failed] We ballsed up!
+  \item \done{Alternative way to \emph{cross things off}\ldots}
+\end{tasks}
+
+\end{document}
