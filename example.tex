@@ -2,16 +2,14 @@
 \usepackage{blindtext}
 
 % You'll want to put in a title, and supress a date by providinng a blank one.
-\title{Very good contract\vspace{-1cm}}
+\title{Very good contract}
 \date{}
 
 \begin{document}
 
 \maketitle
-  %% TODO: reduce title margin in the contract class so this
-                %% doesn't have to be included every time.
 
-
+%% This is where the expositional text on the contract goes.
 \begin{flavourtext}
   This is some flavour text!\par
 
@@ -23,6 +21,9 @@
   \end{itemize}
 \end{flavourtext}
 
+
+% This is where the actual tasks for the contract are.
+% We can mark them complete or incomplete with options, or cross them out!
 \begin{tasks}
   \item This thing hasn't been looked at yet
   \item[\completed] We finished it!
