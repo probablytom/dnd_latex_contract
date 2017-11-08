@@ -31,13 +31,14 @@
 \newlist{todolist}{itemize}{1}
 \setlist[todolist]{label=$\square$}
 \usepackage{pifont}
-\newcommand{\cmark}{\ding{51}}%
-\newcommand{\xmark}{\ding{55}}%
-\newcommand{\completed}{\rlap{$\square$}{\color{green}\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+\newcommand{\completed}{\rlap{$\square$}{\color{green}\raisebox{2pt}{\large\hspace{1pt}\cmark}}
 \hspace{-2.5pt}}
 \newcommand{\failed}{\rlap{$\square$}{\color{red}\large\hspace{1pt}\xmark}}
 
 %% When some task on the contract is completed, we cross it off, coloured red.
 \newcommand{\done}[1]{ \textcolor{BrickRed}{ \xcancel{{#1}} } } 
 
-\newenvironment{tasks}{\begin{center}\begin{itemize}\item\begin{todolist}}{\end{todolist}\end{itemize}\end{center}}
+%% TODO: Hacked together to get it working, at least make this readable...
+\newenvironment{tasks}{\begin{center}\item\begin{todolist}}{\end{todolist}\end{center}}
